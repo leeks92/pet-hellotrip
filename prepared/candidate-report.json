@@ -6,8 +6,8 @@
   "html": 54207,
   "source_manifest_html": 54207,
   "source_empty_directories": 0,
-  "tar_bytes": 1318359040,
-  "tar_sha256": "30bfdd56562adc80d362ace22bcc821c26e67678a5028268d1ebeed94aa5731b",
+  "tar_bytes": 1457879040,
+  "tar_sha256": "ae84636b111a293b194e571365935e86b02b74f7a682bf1b68659e4429c32e02",
   "pins": {
     "/Users/daniel/side-projects/hellotrip/sites/site-domains.json": "d480da9c51fd81f896bb0090dfe8cc01b6a1a102f5c76e1b0b47f569fe1c03af",
     "/Users/daniel/side-projects/hellotrip/sites/pet/data/generated-manifest.json": "b9bb1aae7b9de53cf4b594fd060fddccb8b4c1c2eb020186ff3e342bd80c9acc",
@@ -25,14 +25,16 @@
     "/Users/daniel/side-projects/hellotrip/deployment/github-pages/share-cards/profiles/pet.json": "4ecc74ab4f5794bec780dd56791e01fced437926ae5a1560c21b9b88923f6341",
     "/Users/daniel/side-projects/hellotrip/deployment/github-pages/share-cards/share-223af5d2d79cb3fa9456fd5e.png": "223af5d2d79cb3fa9456fd5e619f50bf4575f7ceac759470614751cbb068c324",
     "/Users/daniel/side-projects/hellotrip/deployment/github-pages/share_card_overlay.py": "fc42e4a41db2d18c59620624ebbe01ef7af8daf615e11b9a1d6485d010c3df66",
-    "/Users/daniel/side-projects/hellotrip/deployment/github-pages/guarded_share_card_overlay.py": "f48e2e37722942709e137d6c192dc25dc40eecc9785b322a8090d2201fba9ee6"
+    "/Users/daniel/side-projects/hellotrip/deployment/github-pages/guarded_share_card_overlay.py": "f48e2e37722942709e137d6c192dc25dc40eecc9785b322a8090d2201fba9ee6",
+    "/private/tmp/hellotrip-pet-release-20261117/pet-public-report.json": "e7c6e45432c9e1b6e7aeb57ef8f2c92747c37c7abe2bc603f34567a2bd388818",
+    "/private/tmp/hellotrip-pet-release-20261117/directory-entry-proof.json": "accd284d0fd2ad5b7e7a2934ab1019240db216e84a9e9ced56deac27bce590bf"
   },
   "source_output_unchanged": true,
   "physical_tar_written": true,
   "search_pair_byte_budget": 8388608,
   "capacity": {
     "published_bytes": 1248666727,
-    "tar_bytes": 1318359040,
+    "tar_bytes": 1457879040,
     "github_pages_limit_bytes": 1000000000,
     "within_supported_limit": false,
     "unofficial_tar_limit_exclusive_bytes": 10000000000,
@@ -98,5 +100,17 @@
       },
       "execution_code_unchanged": true
     }
+  },
+  "directory_entry_compatibility": {
+    "state": "directory_entry_compatibility_candidate",
+    "parent_tar_sha256": "30bfdd56562adc80d362ace22bcc821c26e67678a5028268d1ebeed94aa5731b",
+    "tar_sha256": "ae84636b111a293b194e571365935e86b02b74f7a682bf1b68659e4429c32e02",
+    "files_verified": 95782,
+    "published_bytes": 1248666727,
+    "directories_added": 54790,
+    "all_file_names_bytes_order_unchanged": true,
+    "ordered_file_digest": "0ab5273c031bc5fb937b1513dad53d1a1c021a0e26e8da34d86ad50a911939fd",
+    "publication_performed": false,
+    "cause_of_prior_failure": "not established"
   }
 }

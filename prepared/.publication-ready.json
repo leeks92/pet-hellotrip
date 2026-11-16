@@ -7,11 +7,11 @@
   "source_conditions_scope": "pet exact currently consumed facts; not blanket website/image/prose republication approval",
   "source_review_limit": "EumAMC uses limited schedule facts and original summary, not a blanket website republication licence. Three other website overrides use licensed culture survey facts with originals retained locally.",
   "artifact_reviewed": true,
-  "tar_sha256": "30bfdd56562adc80d362ace22bcc821c26e67678a5028268d1ebeed94aa5731b",
+  "tar_sha256": "ae84636b111a293b194e571365935e86b02b74f7a682bf1b68659e4429c32e02",
   "capacity_policy": "precedent",
   "capacity_limit_disclosure": {
     "published_bytes": 1248666727,
-    "tar_bytes": 1318359040,
+    "tar_bytes": 1457879040,
     "github_pages_limit_bytes": 1000000000,
     "within_supported_limit": false,
     "unofficial_tar_limit_exclusive_bytes": 10000000000,
@@ -32,8 +32,10 @@
     "facts-projection-scope.json": "ae7fdc130b51e218cc7428f003ea5ae8b2c66b715ffc8f4408d0a5012cf39b4b",
     "native-facts-applied.json": "2ce074bac13801d87493fd38d05dd5831a99d1ef8e208bd4cf565633439a04a7",
     "tracking-current-readback.json": "b24313cfe2de139e838112e219a235eadd1fad7d1f99abeb583c2b6b736c38d2",
-    "final-source-audit-v2/pet/summary.json": "0f946fd8c6bbbbdc80212778a74718698a3cecb09fce17551c573dff5d4e6a3e"
+    "final-source-audit-v2/pet/summary.json": "0f946fd8c6bbbbdc80212778a74718698a3cecb09fce17551c573dff5d4e6a3e",
+    "directory-entry-proof.json": "accd284d0fd2ad5b7e7a2934ab1019240db216e84a9e9ced56deac27bce590bf"
   },
   "publication_performed": false,
-  "review_limits": "All final HTML heads read; same-turn whole-DOM baseline plus exact all-current-byte projection and four-body DOM checks. Fifteen mobile cases, not every screen. Five title and three description groups retain unresolved physical-entity identity; no invented distinctions."
+  "review_limits": "All final HTML heads read; same-turn whole-DOM baseline plus exact all-current-byte projection and four-body DOM checks. Fifteen mobile cases, not every screen. Five title and three description groups retain unresolved physical-entity identity; no invented distinctions.",
+  "artifact_reviewed_scope": "Same reviewed 95782 file names, bytes and order; added safe parent directory entries only, with full before/after readback."
 }
