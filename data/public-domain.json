@@ -1,0 +1,18 @@
+{
+  "site_id": "pet",
+  "subdomain_label": "pet",
+  "hostname": "pet.hellotrip.kr",
+  "value_source": "user_explicit_choice",
+  "decision_date": "2026-11-10",
+  "dns_configured_by_this_task": false,
+  "public_deployment_performed": false,
+  "previous_selection": {
+    "site_id": "pet",
+    "subdomain_label": "pet",
+    "hostname": "pet.enjoytip.com",
+    "value_source": "user_explicit_choice",
+    "decision_date": "2026-10-26",
+    "dns_configured_by_this_task": false,
+    "public_deployment_performed": false
+  }
+}

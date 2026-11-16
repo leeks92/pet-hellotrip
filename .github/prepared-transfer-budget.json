@@ -1,0 +1,48 @@
+{
+  "version": 1,
+  "site": "pet",
+  "hostname": "pet.hellotrip.kr",
+  "transfer_manifest_sha256": "30da091ac7e662ecc3750576aecc06aa83577859f7c61e8ee99575cd594a8274",
+  "bundle_files": {
+    "tar-binary-readback.json.gz": {
+      "bytes": 7653,
+      "sha256": "796ee67069d9d653ce2094e9b403c3b4dc9ab7cff61821bb0b78d45544ed166d"
+    },
+    "source-audit.json": {
+      "bytes": 26430,
+      "sha256": "b214f50ea7ed0c089555f585d9a85e86c0bb53bd121c27eb1148b664ff52c58a"
+    },
+    "archive.tar.gz.00001.part": {
+      "bytes": 67108864,
+      "sha256": "8e70a0699e8df2343d7d777585747b118de972ec0fcaee2ae02c725117dc773b"
+    },
+    "archive.tar.gz.00000.part": {
+      "bytes": 67108864,
+      "sha256": "0265dfb1eae0320e5d3880848079b6e58bbd667ae460102f0fe2b5d805bf9203"
+    },
+    "readback.json": {
+      "bytes": 6275,
+      "sha256": "794033bb5523d1267512972086abc35bf8f5b3dd2d9f21cc8ba0c0bfd22caa11"
+    },
+    "archive.tar.gz.00002.part": {
+      "bytes": 30631925,
+      "sha256": "a9099a08d9e95190194ee0aeb634d7b08d6121b8de753384981af22f2bbcdcc5"
+    },
+    "candidate-report.json": {
+      "bytes": 8379,
+      "sha256": "b2a4171acd6b48725ec96a5d5776575d2241e31daf87f257657e03b751823520"
+    },
+    "transfer-manifest.json": {
+      "bytes": 1011,
+      "sha256": "30da091ac7e662ecc3750576aecc06aa83577859f7c61e8ee99575cd594a8274"
+    }
+  },
+  "checkout_bytes": 164899401,
+  "git_object_budget_bytes": 181676617,
+  "release_file_budget_bytes": 346576018,
+  "tar_bytes": 1290782720,
+  "tar_sha256": "453037b506d6d70732aadbebc512f809072452ea5cac8c10ceba98622f05ad0a",
+  "approval_created": false,
+  "publication_performed": false,
+  "scope": "Measured compressed working tree plus a separate Git object budget; explicit runtime floor, not a measured clone/upload peak"
+}

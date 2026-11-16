@@ -1,0 +1,8 @@
+{
+  "version": 1,
+  "site": "pet",
+  "hostname": "pet.hellotrip.kr",
+  "scope": "prepared-tar-only",
+  "approval_created": false,
+  "publication_performed": false
+}

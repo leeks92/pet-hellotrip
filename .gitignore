@@ -1,0 +1,18 @@
+out/
+__pycache__/
+tests/__pycache__/
+.server.log
+.server.pid
+verification.json
+browser-verification.json
+screenshots/
+
+# Generated output and local credentials stay local.
+/out/
+/node_modules/
+/.deps/
+**/__pycache__/
+.env*
+
+# Local originals and exact display restoration ledgers stay private.
+/.private/

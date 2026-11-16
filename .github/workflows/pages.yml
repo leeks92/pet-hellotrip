@@ -1,0 +1,128 @@
+name: Publish reviewed local static output
+on:
+  workflow_dispatch:
+    inputs:
+      package_mode:
+        description: Use the final prepared TAR; raw is an explicitly reviewed legacy path
+        type: choice
+        options:
+          - raw
+          - prepared-tar
+        default: prepared-tar
+        required: true
+permissions:
+  contents: read
+concurrency:
+  group: github-pages
+  cancel-in-progress: false
+jobs:
+  prepare:
+    if: vars.PAGES_PUBLICATION_APPROVED == 'true'
+    runs-on: ubuntu-latest
+    timeout-minutes: 60
+    env:
+      # User selected oversized precedent preparation on 2026-11-14.
+      # Publication approval and a matching reviewed receipt remain required.
+      CAPACITY_POLICY: ${{ vars.PAGES_CAPACITY_POLICY || 'precedent' }}
+    steps:
+      - uses: actions/checkout@v6
+        with:
+          path: source
+          persist-credentials: false
+      - name: Check the source checkout release capability
+        run: |
+          if [ "${{ inputs.package_mode }}" != "prepared-tar" ] && [ -f source/.github/prepared-only.json ]; then
+            echo "::error::This minimal source tree supports only prepared-tar; raw needs the separately reviewed full source input."
+            exit 1
+          fi
+      - name: Preview ephemeral SDK cleanup plan
+        run: python3 source/.github/scripts/runner_disk.py
+      - name: Apply explicitly approved ephemeral SDK cleanup
+        if: vars.PAGES_RUNNER_CLEANUP_APPROVED == 'true'
+        env:
+          PAGES_RUNNER_CLEANUP_APPROVED: 'true'
+        run: python3 source/.github/scripts/runner_disk.py --apply-reviewed-sdk-cleanup
+      - name: Check raw output disk before release checkout
+        if: inputs.package_mode != 'prepared-tar'
+        run: >-
+          python3 source/.github/scripts/runner_disk.py --check
+          --workspace "${{ github.workspace }}" --temp "${{ runner.temp }}"
+          --release-bytes 1218113402
+      - name: Check measured prepared transfer disk before release checkout
+        if: inputs.package_mode == 'prepared-tar'
+        run: >-
+          python3 source/.github/scripts/prepared_release.py check-disk
+          --budget source/.github/prepared-transfer-budget.json
+          --hostname pet.hellotrip.kr
+          --workspace "${{ github.workspace }}" --temp "${{ runner.temp }}"
+      - uses: actions/checkout@v6
+        with:
+          ref: pages-output
+          path: release
+          persist-credentials: false
+      - name: Check raw output remaining disk before TAR creation
+        if: inputs.package_mode != 'prepared-tar'
+        run: >-
+          python3 source/.github/scripts/runner_disk.py --check
+          --workspace "${{ github.workspace }}" --temp "${{ runner.temp }}"
+      - name: Check reviewed release discovery files
+        if: inputs.package_mode != 'prepared-tar'
+        run: >-
+          python3 source/.github/scripts/release_preflight.py
+          --out release/out
+          --hostname pet.hellotrip.kr
+          --domain-config source/data/public-domain.json
+          --report "${{ runner.temp }}/pages-discovery.json"
+      - name: Validate and package the reviewed local output
+        if: inputs.package_mode != 'prepared-tar'
+        run: >-
+          python3 source/.github/scripts/pages_gate.py
+          --out release/out
+          --hostname pet.hellotrip.kr
+          --public
+          --capacity-policy "$CAPACITY_POLICY"
+          --archive "${{ runner.temp }}/artifact.tar"
+          --report "${{ runner.temp }}/pages-capacity.json"
+      - name: Validate and restore the exact prepared public candidate TAR
+        if: inputs.package_mode == 'prepared-tar'
+        run: >-
+          python3 source/.github/scripts/prepared_release.py receive
+          --bundle release/prepared
+          --transfer-budget source/.github/prepared-transfer-budget.json
+          --release-root release
+          --hostname pet.hellotrip.kr
+          --domain-config source/data/public-domain.json
+          --capacity-policy "$CAPACITY_POLICY"
+          --archive "${{ runner.temp }}/artifact.tar"
+          --report "${{ runner.temp }}/pages-capacity.json"
+      # Upload the exact measured TAR; no re-archiving, hidden-file exclusion,
+      # RSC deletion, or content pruning occurs in this workflow.
+      - uses: actions/upload-artifact@v4
+        with:
+          name: github-pages
+          path: ${{ runner.temp }}/artifact.tar
+          compression-level: 6
+          retention-days: 1
+          if-no-files-found: error
+      - uses: actions/upload-artifact@v4
+        with:
+          name: pages-capacity
+          path: ${{ runner.temp }}/pages-capacity.json
+          retention-days: 1
+          if-no-files-found: error
+  deploy:
+    needs: prepare
+    runs-on: ubuntu-latest
+    timeout-minutes: 15
+    permissions:
+      pages: write
+      id-token: write
+    environment:
+      name: github-pages
+      url: ${{ steps.deployment.outputs.page_url }}
+    steps:
+      - uses: actions/configure-pages@v5
+      - uses: actions/deploy-pages@v5
+        id: deployment
+        with:
+          timeout: 600000
