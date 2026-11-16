@@ -1,0 +1,102 @@
+{
+  "state": "private_technical_candidate_measured",
+  "site": "pet",
+  "files": 95782,
+  "published_bytes": 1248666727,
+  "html": 54207,
+  "source_manifest_html": 54207,
+  "source_empty_directories": 0,
+  "tar_bytes": 1318359040,
+  "tar_sha256": "30bfdd56562adc80d362ace22bcc821c26e67678a5028268d1ebeed94aa5731b",
+  "pins": {
+    "/Users/daniel/side-projects/hellotrip/sites/site-domains.json": "d480da9c51fd81f896bb0090dfe8cc01b6a1a102f5c76e1b0b47f569fe1c03af",
+    "/Users/daniel/side-projects/hellotrip/sites/pet/data/generated-manifest.json": "b9bb1aae7b9de53cf4b594fd060fddccb8b4c1c2eb020186ff3e342bd80c9acc",
+    "/private/tmp/hellotrip-pet-release-20261117/final-source-audit-v2/pet/summary.json": "0f946fd8c6bbbbdc80212778a74718698a3cecb09fce17551c573dff5d4e6a3e",
+    "/Users/daniel/side-projects/hellotrip/deployment/github-pages/duplicate_publication.py": "4027e57cc982c9a9883bc3fe5e783b41ef00dc60378502acb98d47797b79cfc8",
+    "/Users/daniel/side-projects/hellotrip/deployment/github-pages/prepare_public_stream.py": "8f989b0fbc6427d06129e28a9ae5641147db827b32b799e5a6cd42e60abf7382",
+    "/Users/daniel/side-projects/hellotrip/deployment/github-pages/public_candidate.py": "8b8412167252bcd0f82cb3c2dcb7b40df0497455ae94a703c9be44290a6b9643",
+    "/Users/daniel/side-projects/hellotrip/deployment/github-pages/pages_gate.py": "d93c2af8d221123e27d81ca87786c5fba70f4f27e0e6b6ff4b98fdb6b504a5ca",
+    "/Users/daniel/side-projects/hellotrip/sites/seo-support/site_io.py": "a7e3d482add7800b17b658b0e08897b3b69227ff78cecc6514bbae4af5057f8e",
+    "/Users/daniel/side-projects/hellotrip/sites/seo-support/seo_content_search.py": "333462c5525c29e513d1e1dff8cb443b773b9de575848861940bfefc1fe473fd",
+    "/Users/daniel/side-projects/hellotrip/deployment/github-pages/documents_licensed_profile.py": "a26502b29703062483dd3a49dcc51be481debbb77599c9d6a94f1af622c2611c",
+    "/Users/daniel/side-projects/hellotrip/deployment/github-pages/prepare_parallel_stream.py": "b9c0e91bf39ca454d37d18abd90718f462200a72caa011232f99cdd4b2bdc6f8",
+    "/Users/daniel/side-projects/hellotrip/deployment/github-pages/parallel_projection.py": "632d0e4fb2f7491135d14dda5016135792084f69b8f738aee3b88f87832ad717",
+    "/private/tmp/hellotrip-pet-release-20261117/pet-public-report.base.json": "1ca7d52cc3e4a645fc0c538c750277fa25213cad4844860d75affb9ea20b1f11",
+    "/Users/daniel/side-projects/hellotrip/deployment/github-pages/share-cards/profiles/pet.json": "4ecc74ab4f5794bec780dd56791e01fced437926ae5a1560c21b9b88923f6341",
+    "/Users/daniel/side-projects/hellotrip/deployment/github-pages/share-cards/share-223af5d2d79cb3fa9456fd5e.png": "223af5d2d79cb3fa9456fd5e619f50bf4575f7ceac759470614751cbb068c324",
+    "/Users/daniel/side-projects/hellotrip/deployment/github-pages/share_card_overlay.py": "fc42e4a41db2d18c59620624ebbe01ef7af8daf615e11b9a1d6485d010c3df66",
+    "/Users/daniel/side-projects/hellotrip/deployment/github-pages/guarded_share_card_overlay.py": "f48e2e37722942709e137d6c192dc25dc40eecc9785b322a8090d2201fba9ee6"
+  },
+  "source_output_unchanged": true,
+  "physical_tar_written": true,
+  "search_pair_byte_budget": 8388608,
+  "capacity": {
+    "published_bytes": 1248666727,
+    "tar_bytes": 1318359040,
+    "github_pages_limit_bytes": 1000000000,
+    "within_supported_limit": false,
+    "unofficial_tar_limit_exclusive_bytes": 10000000000,
+    "under_unofficial_tar_limit": true,
+    "over_supported_size_is_guaranteed": false
+  },
+  "public_ready": false,
+  "publication_performed": false,
+  "source_clearance_separately_required": true,
+  "health_profile": {},
+  "documents_profile": {},
+  "elapsed_seconds": 39.54496693611145,
+  "parallel_execution": {
+    "code_pins": {
+      "/Users/daniel/side-projects/hellotrip/deployment/github-pages/parallel_projection.py": "632d0e4fb2f7491135d14dda5016135792084f69b8f738aee3b88f87832ad717",
+      "/Users/daniel/side-projects/hellotrip/deployment/github-pages/public_candidate.py": "8b8412167252bcd0f82cb3c2dcb7b40df0497455ae94a703c9be44290a6b9643"
+    },
+    "code_unchanged": true,
+    "stream_exhausted": true,
+    "workers": 2,
+    "max_inflight": 8,
+    "prefetch_byte_budget": 8388608,
+    "prefetch_scope": "Accumulated input threshold plus at most one current source member; large members remain serial",
+    "worker_serialized_result_byte_budget": 16777216,
+    "max_queued_serialized_payload_bytes": 134217728,
+    "oversized_members": "same_serial_projector",
+    "memory_exclusions": "Separate worker catalog/interpreter memory, fixed IPC framing and tiny fallback markers are not included",
+    "public_ready": false
+  },
+  "elapsed_scope": "sharing-card overlay phase only; parent producer duration retained separately",
+  "share_card_overlay": {
+    "parent_catalog_sha256": "f912e3da384e4ebbab9da8ee23b4925fffceef198043a9106cef81c03eed899c",
+    "parent_ordered_source_candidate_digest": "be18033b5b0599f7d8856bb3ad7eed2b53cc85263fe626690935fd111533e933",
+    "parent_elapsed_seconds": 460.0822539329529,
+    "parent_tar_sha256": "e9a154c9c7d30c4fe90f08ef3a0273489816ccac05ed7897ce6fc59729f9df24",
+    "parent_report_sha256": "1ca7d52cc3e4a645fc0c538c750277fa25213cad4844860d75affb9ea20b1f11",
+    "profile_sha256": "4ecc74ab4f5794bec780dd56791e01fced437926ae5a1560c21b9b88923f6341",
+    "hostname": "pet.hellotrip.kr",
+    "member": "assets/share/petlife-share-08079822df94ccc0.png",
+    "before_sha256": "08079822df94ccc016554568e4a0e4c325bb72982d151e2a61e7505692702fc8",
+    "after_sha256": "223af5d2d79cb3fa9456fd5e619f50bf4575f7ceac759470614751cbb068c324",
+    "changed_members": 1,
+    "unchanged_members": 95781,
+    "unchanged_members_sha256": "95b9d8c2137b3f9adca10c7377ed84f22ab7cdae7bd429c1e0d3cd2901612601",
+    "ordered_member_readback_sha256": "ccef5600857f9d8ae834f02f5f07f17f9eca6c49169b9d7f38cefb20c67381eb",
+    "all_html_bytes_unchanged": true,
+    "original_png_and_preview_unchanged": true,
+    "legacy_asset_uri_retained": true,
+    "filename_is_source_identity_not_projected_payload_hash": true,
+    "publication_performed": false,
+    "extra_pre_post_checks": {
+      "replacement_sha_before_after": "223af5d2d79cb3fa9456fd5e619f50bf4575f7ceac759470614751cbb068c324",
+      "og_technical_conditions": {
+        "eligible": true,
+        "needs_raster": false,
+        "reasons": [],
+        "scope": "technical_candidate_only",
+        "guidance": "https://searchadvisor.naver.com/guide/markup-content"
+      },
+      "initial_execution_code_pins": {
+        "/Users/daniel/side-projects/hellotrip/deployment/github-pages/guarded_share_card_overlay.py": "f48e2e37722942709e137d6c192dc25dc40eecc9785b322a8090d2201fba9ee6",
+        "/Users/daniel/side-projects/hellotrip/deployment/github-pages/share_card_overlay.py": "fc42e4a41db2d18c59620624ebbe01ef7af8daf615e11b9a1d6485d010c3df66"
+      },
+      "execution_code_unchanged": true
+    }
+  }
+}

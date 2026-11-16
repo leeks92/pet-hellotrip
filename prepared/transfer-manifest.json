@@ -1,0 +1,30 @@
+{
+  "version": 1,
+  "hostname": "pet.hellotrip.kr",
+  "site": "pet",
+  "candidate_report_sha256": "e7c6e45432c9e1b6e7aeb57ef8f2c92747c37c7abe2bc603f34567a2bd388818",
+  "source_audit_sha256": "0f946fd8c6bbbbdc80212778a74718698a3cecb09fce17551c573dff5d4e6a3e",
+  "publication_receipt_sha256": "768c2f5ebaefefa66712257d721fc0aae1b6b555b145f95f4e8beb088b93abb2",
+  "parts": [
+    {
+      "name": "archive.tar.gz.00000.part",
+      "bytes": 67108864,
+      "sha256": "0265dfb1eae0320e5d3880848079b6e58bbd667ae460102f0fe2b5d805bf9203"
+    },
+    {
+      "name": "archive.tar.gz.00001.part",
+      "bytes": 67108864,
+      "sha256": "12a7f8ef7364d024ac4a0d5efd0cc1d5e94f9d9787dfa5334b6f0d1f0dc16895"
+    },
+    {
+      "name": "archive.tar.gz.00002.part",
+      "bytes": 31392658,
+      "sha256": "3a65745ed78ec5a0872ec6aad9ff80130604dea9e9846b72c105620a8587ea7c"
+    }
+  ],
+  "part_max_bytes": 67108864,
+  "tar_sha256": "30bfdd56562adc80d362ace22bcc821c26e67678a5028268d1ebeed94aa5731b",
+  "tar_bytes": 1318359040,
+  "approval_created": false,
+  "publication_performed": false
+}

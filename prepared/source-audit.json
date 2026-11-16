@@ -1,0 +1,90 @@
+{
+  "site": "pet",
+  "manifest_pages": 54207,
+  "read": 54207,
+  "metrics": {
+    "h1_count_1": 54207,
+    "links": 2197381,
+    "links_existing": 1984844,
+    "assets": 238145,
+    "assets_existing": 219740,
+    "forms": 2,
+    "forms_existing": 2,
+    "schema_json_ld_blocks": 54207,
+    "schema_invalid_json_blocks": 0,
+    "schema_primary_page_nodes": 105245,
+    "schema_current_entities_checked": 24879,
+    "schema_page_dates_without_explicit_visible_evidence": 50760,
+    "html": 54207,
+    "html_bytes": 1010332342,
+    "representatives": 52274,
+    "history_pages": 0,
+    "images": 1,
+    "links_non_web": 21521,
+    "links_external": 191016,
+    "assets_external": 18405,
+    "history_links": 0
+  },
+  "issues": {},
+  "graph": {
+    "unreachable": 0,
+    "incoming_zero": 0,
+    "depth": {
+      "0": 1,
+      "1": 37,
+      "3": 25616,
+      "2": 2751,
+      "4": 5484,
+      "5": 20268,
+      "6": 50
+    },
+    "edges": 1714929
+  },
+  "duplicates": {
+    "title": {
+      "groups": 5,
+      "pages": 10,
+      "excess": 5
+    },
+    "description": {
+      "groups": 3,
+      "pages": 6,
+      "excess": 3
+    },
+    "body": {
+      "groups": 0,
+      "pages": 0,
+      "excess": 0
+    },
+    "core": {
+      "groups": 0,
+      "pages": 0,
+      "excess": 0
+    },
+    "information": {
+      "groups": 0,
+      "pages": 0,
+      "excess": 0
+    }
+  },
+  "manifest_sha256": "b9bb1aae7b9de53cf4b594fd060fddccb8b4c1c2eb020186ff3e342bd80c9acc",
+  "elapsed": 47,
+  "limit": null,
+  "provenance": {
+    "method": "same-turn full DOM baseline plus exact all-current-byte projection and four-body DOM checks",
+    "base_summary": "/private/tmp/hellotrip-pet-release-20261117/source-audit/pet/summary.json",
+    "base_summary_sha256": "6d74c1bb45b094a48a4d9910c7aa06f4c1a57958af862f88d5141e4f072e195d",
+    "all_current_files_read": 54207,
+    "tracking_head_blocks_verified": 54207,
+    "naver_home_head_verified": 1,
+    "body_delta_dom_paths": [
+      "/개인정보/",
+      "/동물병원/바우동물병원-c91f4e197f294399ea00/",
+      "/동물병원/숲속동물병원-37087652169931554856/",
+      "/동물병원/현풍동물병원-7a0e2e808368d95d5623/"
+    ],
+    "unchanged_internal_graph_proven": true,
+    "fresh_full_dom_reparse": false,
+    "new_external_loader": "https://www.googletagmanager.com/gtag/js?id=G-Z33W68KWQF"
+  }
+}
