@@ -2,10 +2,11 @@
   "state": "private_transport_bundle_verified",
   "actual_parts_readback": true,
   "publication_performed": false,
-  "transfer_manifest_sha256": "67d200177c8b0f9b81bee1d325a925d0de5c4baa1b6ed926e942d8ad166b8842",
+  "transfer_manifest_sha256": "6c2f7e3b92408a29e707cd152eac1214aa3ebeca8f59ad63dee78776e2e6493a",
   "hostname": "pet.hellotrip.kr",
   "site": "pet",
-  "tar_sha256": "ae84636b111a293b194e571365935e86b02b74f7a682bf1b68659e4429c32e02",
-  "tar_bytes": 1457879040,
-  "compressed_parts": 3
+  "tar_sha256": "9a00584caa16f39f52873dd31e221285673208c42d584941afb6972ecccf5c52",
+  "tar_bytes": 1469972480,
+  "compressed_parts": 3,
+  "receiver_report_sha256": "fae411bfce2f17852d5df3f97dd2d05358841716c9b82ae498ebdef179ef10f8"
 }
