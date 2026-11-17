@@ -2,7 +2,7 @@
   "version": 1,
   "site": "pet",
   "hostname": "pet.hellotrip.kr",
-  "transfer_manifest_sha256": "67d200177c8b0f9b81bee1d325a925d0de5c4baa1b6ed926e942d8ad166b8842",
+  "transfer_manifest_sha256": "6c2f7e3b92408a29e707cd152eac1214aa3ebeca8f59ad63dee78776e2e6493a",
   "bundle_files": {
     "source-audit.json": {
       "bytes": 2350,
@@ -10,38 +10,38 @@
     },
     "archive.tar.gz.00001.part": {
       "bytes": 67108864,
-      "sha256": "3436ec3f3bd1ce73b9ca02390ef2d5f0dfc8439cf2d1b5df031610c4fcca6f08"
+      "sha256": "cee349c346694551dababd5badead881803100c5eb6a6cffdeb28a0ba12e560a"
     },
     "archive.tar.gz.00000.part": {
       "bytes": 67108864,
-      "sha256": "e7be11b4dd9d4d3b865c7ce31947fdec61bde725fa30cceaff050d42b906e16c"
+      "sha256": "098e7795b21e5746cf03b504590fda17cd910bd09c84d10381a371a2c336bc64"
     },
     ".publication-ready.json": {
-      "bytes": 2845,
-      "sha256": "2907dd03ba00ab090d4f2a0de877cd961afcf93e0b02aa5cf41c1dbafb9def72"
+      "bytes": 2579,
+      "sha256": "95dd051b14728cd360f9b9119136e6f5e4d58e07fa296113fc7988338dbffab1"
     },
     "readback.json": {
-      "bytes": 403,
-      "sha256": "bead9d93421e898d65a2dee0cf80c1f6394cfb939d3c990753b60b3c6480977f"
+      "bytes": 499,
+      "sha256": "4907c2324015fc66de1c55d84d1dc015ad79a4635b3ef7cea6d3ba905be93310"
     },
     "archive.tar.gz.00002.part": {
-      "bytes": 35205426,
-      "sha256": "405b55e172ceccf50c43f501c507001eb90cd00a5f739c16262aa96731944bea"
+      "bytes": 35626429,
+      "sha256": "f43b4159d09789a1c9c9b3f5e60a6cb41664789cc288d795b8b7fb38cd75c3f8"
     },
     "candidate-report.json": {
-      "bytes": 7723,
-      "sha256": "fd657e134e3aef6206ed404c266c9dc6315e2b8648059ca4e9b5cc61a5ebbcd9"
+      "bytes": 7386,
+      "sha256": "9aa7301be4b9a8932aaf76ef2dab6b9ee37bbab9cf39fe5c6f3ec96bea58cd68"
     },
     "transfer-manifest.json": {
       "bytes": 1073,
-      "sha256": "67d200177c8b0f9b81bee1d325a925d0de5c4baa1b6ed926e942d8ad166b8842"
+      "sha256": "6c2f7e3b92408a29e707cd152eac1214aa3ebeca8f59ad63dee78776e2e6493a"
     }
   },
-  "checkout_bytes": 169437548,
-  "git_object_budget_bytes": 186214764,
-  "release_file_budget_bytes": 355652312,
-  "tar_bytes": 1457879040,
-  "tar_sha256": "ae84636b111a293b194e571365935e86b02b74f7a682bf1b68659e4429c32e02",
+  "checkout_bytes": 169858044,
+  "git_object_budget_bytes": 186635260,
+  "release_file_budget_bytes": 356493304,
+  "tar_bytes": 1469972480,
+  "tar_sha256": "9a00584caa16f39f52873dd31e221285673208c42d584941afb6972ecccf5c52",
   "approval_created": false,
   "publication_performed": false,
   "scope": "Measured compressed working tree plus a separate Git object budget; explicit runtime floor, not a measured clone/upload peak"
